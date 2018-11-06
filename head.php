@@ -1,3 +1,6 @@
+<?php
+include('db_connect.php');
+?>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -11,7 +14,7 @@
 	<style>
 		
 		img {
-			border-radius: 8px;
+			border-radius: 80px;
 		}
 		
 		.container{

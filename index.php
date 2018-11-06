@@ -13,15 +13,18 @@ include('head.php');
 </div>
 	
   <div class="row">
-    <div class="col-md-8">
-			<img src="Fruits.jpg">
+    <div class="col-md-9">
+			<img src="greens/Fruits.jpg">
 			<h1>En rubrik</h1>
 			<p>Lots and lots of placeholding text just to see the layout of it.</p>
 		</div>
-    <div class="col-md-4">
+    <div class="box-1">
+	<div class="col-md-3">
+		<br>
 		<h3>Sidorubrik</h3>
 		<p>Någon text</p>
 		</div>
+</div>
 </div>
 </div>
 <!-- End of content -->

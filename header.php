@@ -17,13 +17,13 @@
           Selection
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="greens/fruits.php">Fruits</a>
-          <a class="dropdown-item" href="greens/vegetables.php">Vegetables</a>
-          <a class="dropdown-item" href="greens/berries.php">Berries</a>
+          <a class="dropdown-item" href="x_fruits.php">Fruits</a>
+          <a class="dropdown-item" href="x_vegetables.php">Vegetables</a>
+          <a class="dropdown-item" href="x_berries.php">Berries</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">WIP</a>
+        <a class="nav-link disabled" href="#">Logout</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
