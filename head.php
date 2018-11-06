@@ -9,5 +9,12 @@
 
     <title>Fruit-Stop AB</title>
 	<style>
-	img {max-width: 100%}
+		
+		img {
+			border-radius: 8px;
+		}
+		
+		.container{
+			background-color: cyan;
+		}
 	</style>

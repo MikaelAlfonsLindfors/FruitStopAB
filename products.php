@@ -14,7 +14,7 @@ include('head.php');
 	
   <div class="row">
     <div class="col-md-8">
-			<img src="https://dailytimes.com.pk/assets/uploads/2017/11/06/Fruits.jpg">
+			<img src="Fruits.jpg">
 			<h1>En rubrik</h1>
 			<p>Lots and lots of placeholding text just to see the layout of it.</p>
 		</div>
