@@ -6,8 +6,8 @@
 </head>
 
 <body>
-	An error has occurred! Please use a valid name and/password! <br>
-	<a href="index.php" class="btn btn-info">Back to menu</a>
+	Please use a valid name and/password! <br>
+	<a href="fruitlogin.php" class="btn btn-info">Back to menu</a>
 
 	
 </body>

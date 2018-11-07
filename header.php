@@ -9,9 +9,6 @@
       <li class="nav-item <?php if($thispage == "Startsida") { echo "active"; } ?>">
         <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item <?php if($thispage == "Produkter") { echo "active"; } ?>">
-        <a class="nav-link" href="products.php">Products</a>
-      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Selection
@@ -23,7 +20,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Logout</a>
+        <a class='btn btn-danger' href="fruitlogin.php">Logout</a> 
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
