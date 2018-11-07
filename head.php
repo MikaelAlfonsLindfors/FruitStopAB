@@ -20,4 +20,9 @@ include('db_connect.php');
 		.container{
 			background-color: cyan;
 		}
+		
+		.lines{
+			border: 1px solid black;
+			padding: 5px;
+		}
 	</style>
