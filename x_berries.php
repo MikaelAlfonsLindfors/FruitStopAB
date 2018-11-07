@@ -1,6 +1,9 @@
 <?php
 $thispage = "Berries";
 include('head.php');
+
+$q_select = "SELECT * FROM greens WHERE category = 'berry'";
+$stmt = $conn->query($q_select);
 ?>
 </head>
 <body>
@@ -14,34 +17,18 @@ include('head.php');
 
 <div class="container">
 <div class="row" >	
+<?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
     <div class="col-sm-12 col-md-4">
 			<img src="greens/gooseberries.jpg" alt='Gooseberry' 
-				 width='300' height='300'>
-			<h2>Gooseberries</h2>
-		<p>Krusbär</p>
-		<p>25kg</p>
-		<p>12.12.2018</p>
-			
-		</div>
-    <div class="col-sm-12 col-md-4">
-			<img src="greens/blueberries.jpg" alt='Blueberry' 
-				 width='300' height='300'>
-			<h2>Blueberries</h2>
-		<p>Blåbär</p>
-		<p>120kg</p>
-		<p>3.6.2019</p>	
-		</div>
-		
-    <div class="col-sm-12 col-md-4">
-			<img src="greens/strawberries.jpg" alt='Strawberry' 
-				 width='300' height='300'>
-			<h2>Strawberries</h2>
-		<p>Jordgubbar</p>
-		<p>105kg</p>
-		<p>2.3.2019</p>
-		</div>
-</div>
-</div>
+				 width='350' height='350'>
+				 
 
+<?php echo $row['name']; ?> <br><br> <?php echo $row['amount(kg)']; ?>kg <br><br> <?php echo $row['description']; ?>
+		
+		</div>
+		<?php } //stänger while ?>	
+    				
+</div>
+</div>
 <!-- End of content -->
 <?php include('footer.php');?>
