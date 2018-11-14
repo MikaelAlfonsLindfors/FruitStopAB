@@ -7,11 +7,21 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item <?php if($thispage == "Startsida") { echo "active"; } ?>">
-        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">Alla produkter!<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Selection
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" >Frukt</a>
+          <a class="dropdown-item" >Grönsaker</a>
+          <a class="dropdown-item" >Bär</a>
+        </div>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-              <a class='btn btn-danger' href="fruitlogin.php">Logout</a>
+        <a class='btn btn-danger' href="fruitlogin.php">Logout</a> 
     </form>
   </div>
 </nav>

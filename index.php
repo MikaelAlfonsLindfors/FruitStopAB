@@ -109,7 +109,8 @@ $stmt = $conn->query($q_select);
   <input type="number" name="amount"></p>
 <p><label>Beskrivning</label><br>
   <textarea rows="4" cols="50" name="description"></textarea></p>
-<p><button type="submit">Spara Grönsaken!</button></p>
+<p><button type="submit">Lägg till det gröna!</button></p>
+</form>
 </div>		
 </div>
 
