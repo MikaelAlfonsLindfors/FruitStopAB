@@ -22,9 +22,9 @@ $stmt = $conn->query($q_select);
 			<img src="greens/cucumber.jpg"  alt='Cucumber'
 				width='350' height='350'>
 				 
-
+<div class="lines">
 <?php echo $row['name']; ?> <br><br> <?php echo $row['amount(kg)']; ?>kg <br><br> <?php echo $row['description']; ?>
-		
+</div>		
 		</div>
 		<?php } //stänger while ?>	
     			

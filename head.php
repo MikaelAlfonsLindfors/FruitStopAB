@@ -12,17 +12,37 @@ include('db_connect.php');
 
     <title>Fruit-Stop AB</title>
 	<style>
-		
+		.begin{
+			padding: 10px;
+		}
 		img {
 			border-radius: 80px;
 		}
 		
 		.container{
 			background-color: cyan;
+			padding: 10px;
 		}
 		
 		.lines{
 			border: 1px solid black;
 			padding: 5px;
+			background-color: orange;
+			text-transform: capitalize;
+			line-height: 200%;
+			text-align:center;
+			color: green;
+		}
+		
+		.mine{
+			background-color: white;
+			padding: 10px;
+		}
+		.mine2{
+			margin-left:33%;
+		}
+		.output{
+			color:red;
+			margin-left: 35%;
 		}
 	</style>
