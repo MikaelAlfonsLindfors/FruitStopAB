@@ -1,5 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navigation</a>
+<div class="navbar-brand">
+  <a class="navbar-brand" href="#">FRUITSTOP-AB</a>
+ </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -14,12 +16,14 @@
           Selection
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" >Frukt</a>
-          <a class="dropdown-item" >Grönsaker</a>
-          <a class="dropdown-item" >Bär</a>
+          <a class="dropdown-item" href="?groupbycategory=1">Frukt</a>
+          <a class="dropdown-item" href="?groupbycategory=2">Grönsaker</a>
+          <a class="dropdown-item" href="?groupbycategory=3">Bär</a>
         </div>
       </li>
     </ul>
+	<form class="form-inline my-2 my-lg-0">
+        <a class='btn btn-primary' href="fruitstop_stocks.php">Update</a> 
     <form class="form-inline my-2 my-lg-0">
         <a class='btn btn-danger' href="fruitlogin.php">Logout</a> 
     </form>

@@ -12,31 +12,42 @@ include('db_connect.php');
 
     <title>Fruit-Stop AB</title>
 	<style>
-		.begin{
-			padding: 10px;
-		}
-		img {
-			border-radius: 80px;
+		
+		h1{
+			text-align: center;
 		}
 		
+		body{
+			background-color: yellow;
+			padding: 10px;
+		}
+		.begin{
+			padding: 10px;
+			margin-left: 13.5%;
+		}
+		img {
+			border-radius: 90px;
+		}
 		.container{
 			background-color: cyan;
 			padding: 10px;
 		}
-		
 		.lines{
 			border: 1px solid black;
-			padding: 5px;
+			padding: 10px;
 			background-color: orange;
 			text-transform: capitalize;
 			line-height: 200%;
 			text-align:center;
-			color: green;
+			color: black;
+			border-radius: 80px;
+			margin: 10px;
+			font-family: Arial, Helvetica, sans-serif;	
 		}
-		
 		.mine{
 			background-color: white;
 			padding: 10px;
+			border-radius: 80px;
 		}
 		.mine2{
 			margin-left:33%;
@@ -44,5 +55,23 @@ include('db_connect.php');
 		.output{
 			color:red;
 			margin-left: 35%;
+		}
+		.navbar-brand{
+			background-color: green;
+			padding: 10px;
+			border-radius: 80px;
+			font-family: Verdana, Geneva, sans-serif;
+		}
+		.jumbotron{
+			margin-left: 30%;
+			margin-right: 30%;
+			text-align:center;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		table{
+			background-color:cyan;
+			padding:20px;
+			text-align: center;
+			margin-left: 400px;
 		}
 	</style>

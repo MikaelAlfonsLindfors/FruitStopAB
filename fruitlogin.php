@@ -1,6 +1,7 @@
 <?php
 session_start();
 include('db_connect.php');
+include('head.php');
 if(isset($_POST['action'])){
 		$action = $_GET['action'];
 		
@@ -45,16 +46,10 @@ if(isset($_POST) && !empty($_POST)) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Fruitstop LogIn</title>
-    <style>
-    img { max-width: 100%; }
-    h1 { text-align: center; }
-    </style>
   </head>
-  <body>
+ <body>
     <div class="container">
       <div class="row">
         <div class="col">
@@ -76,7 +71,6 @@ if(isset($_POST) && !empty($_POST)) {
 		</div>
 	</div>
 </div>
-
  <!-- / container -->
  <!-- Optional JavaScript -->
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->

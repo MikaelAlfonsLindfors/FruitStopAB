@@ -38,10 +38,23 @@ if(isset($_GET["delete"]) && !empty($_GET["delete"])) {
   }
 
 }
-
+if(isset($_GET['groupbycategory'])) {
+	$groupbycategory = $_GET['groupbycategory'];
+	if($groupbycategory == 1) {
+		$q_select = "SELECT * FROM greens WHERE category='fruit'";
+	}elseif($groupbycategory == 2) {
+		$q_select = "SELECT * FROM greens WHERE category='vegetable'";
+	}elseif($groupbycategory == 3) {
+		$q_select = "SELECT * FROM greens WHERE category='berry'";
+	}
+} else {
+	
 $q_select = "SELECT * FROM greens";
+}
 $stmt = $conn->query($q_select);
+
 ?>
+
 </head>
 <body>
 <div class="container">
@@ -56,14 +69,10 @@ $stmt = $conn->query($q_select);
   <div class="row">
     <div class="col-md-9">
 			<img src="greens/Fruits.jpg">
-			<h1>En rubrik</h1>
-			<p>Lots and lots of placeholding text just to see the layout of it.</p>
 		</div>
     <div class="box-1">
 	<div class="col-md-3">
 		<br>
-		<h3>Sidorubrik</h3>
-		<p>Någon text</p>
 		</div>
 </div>
 </div>
@@ -76,23 +85,21 @@ $stmt = $conn->query($q_select);
     <div class="col-sm">
 	</div>
 </div>
-
-
 <div class="container">
-<div class="row" >	
-<?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
+	<div class="row" >	
+		<?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
 
-      <div class="col-sm-12 col-md-4">				 
-<div class="lines">
-<?php echo $row['name']; ?> <br>
-<?php echo $row['category']; ?> <br> 
-<?php echo $row['amount']; ?>kg <br> 
-<?php echo $row['description']; ?> <br>
-<a href="<?php echo $_SERVER ['PHP_SELF'] . "?delete=" . $row["id"]; ?>" class="btn btn-danger" role="button">Delete</a>
-</div>		
-	</div>
+		<div class="col-sm-12 col-md-4">				 
+			<div class="lines">
+				<?php echo $row['name']; ?> <br>
+				<?php echo $row['category']; ?> <br>
+				<?php echo $row['amount']; ?>kg <br>
+				<?php echo $row['description']; ?> <br>
+				<a href="<?php echo $_SERVER ['PHP_SELF'] . "?delete=" . $row["id"]; ?>" class="btn btn-danger" role="button">Delete</a>
+			</div>		
+		</div>
 		<?php } //stänger while ?>	
-</div>
+	</div>
 </div>
 <div class='output'>
 <?php if(!empty($output)) { echo '<h3>' . $output . '</h3>'; } ?>
@@ -100,7 +107,7 @@ $stmt = $conn->query($q_select);
 <div class="mine">
 <div class='mine2'>
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-<h1>Ge oss något grönt!</h1>
+<h2>Ge oss något grönt!</h2>
 <p><label>Namn</label><br>
   <input type="text" name="name"></p>
 <p><label>Kategori</label><br>
